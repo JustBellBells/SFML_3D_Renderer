@@ -15,10 +15,9 @@ public:
     void renderObj();
     void loadObj(std::string objFile);
 
-    std::vector<sf::Vector3f> vec3fArr;
+    std::vector<sf::Vector3f> mesh;
     int vertCount;
-    std::vector<sf::Vertex> vertexArray;
-    sf::VertexBuffer vertexBuffer;
+    sf::VertexArray vertexArray;
 
     int width;
     int height;

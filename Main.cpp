@@ -14,7 +14,7 @@ int main()
     Renderer renderer;
 
     // Render Obj file
-    renderer.loadObj("teapot.obj");
+    renderer.loadObj("FinalBaseMesh.obj");
 
     // Main loop
     while (window.isRunning())
@@ -29,7 +29,7 @@ int main()
         window.pollEvents();
         window.clear();
         renderer.renderObj();
-        window.draw(renderer.vertexBuffer);
+        window.draw(renderer.vertexArray);
         window.display();
         renderer.frame = renderer.frame + 1.f;
     }

@@ -13,9 +13,9 @@ public:
     ~Window();
     bool isRunning();
     void pollEvents();
+    void draw(sf::VertexArray vertexArray);
     void clear();
     void display();
-    void draw(sf::VertexBuffer buffer);
 
     int width;
     int height;

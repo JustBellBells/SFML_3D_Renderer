@@ -61,7 +61,7 @@ void Window::display()
     this->window->display();
 }
 
-void Window::draw(sf::VertexBuffer buffer)
+void Window::draw(sf::VertexArray vertexArray)
 {
-    this->window->draw(buffer);
+    this->window->draw(vertexArray);
 }
