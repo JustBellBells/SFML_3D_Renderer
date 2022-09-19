@@ -31,6 +31,6 @@ int main()
         renderer.renderObj();
         window.draw(renderer.vertexArray);
         window.display();
-        renderer.frame = renderer.frame + 1.f;
+        renderer.frame++;
     }
 }
