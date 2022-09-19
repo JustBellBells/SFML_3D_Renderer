@@ -3,7 +3,7 @@
 
 #pragma once
 #include "Window.h"
-#include <SFML/Graphics.hpp>
+#include "SFML-2.5.1/include/SFML/Graphics.hpp"
 #include <string>
 #include <vector>
 
