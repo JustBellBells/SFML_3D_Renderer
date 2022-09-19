@@ -2,7 +2,7 @@
 #include "OBJ_Loader.h"
 #include "Matrix.h"
 #include <string>
-#include "SFML-2.5.1/include/SFML/Graphics.hpp"
+#include <SFML/Graphics.hpp>
 
 Renderer::Renderer()
 {

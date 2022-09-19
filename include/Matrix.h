@@ -2,8 +2,8 @@
 #define MATRIX_H
 
 #pragma once
-#include "glm-master/glm/gtx/transform.hpp"
-#include "glm-master/glm/matrix.hpp"
+#include <glm/gtx/transform.hpp>
+#include <glm/matrix.hpp>
 
 class Matrix
 {
