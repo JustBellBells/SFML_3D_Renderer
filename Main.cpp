@@ -19,18 +19,17 @@ int main()
     // Main loop
     while (window.isRunning())
     {
-        switch (window.isResized)
-        {
-        case (true):
-            window.isResized = false;
-            renderer.width = window.width;
-            renderer.height = window.height;
-        }
-        window.pollEvents();
-        window.clear();
-        renderer.renderObj();
-        window.draw(renderer.vertexArray);
-        window.display();
-        renderer.frame++;
+      if(window.isResized)
+      {
+        window.isResized = false;
+        renderer.width = window.width;
+        renderer.height = window.height;
+      }
+      window.pollEvents();
+      window.clear();
+      renderer.renderObj();
+      window.draw(renderer.vertexArray);
+      window.display();
+      renderer.frame++;
     }
 }
