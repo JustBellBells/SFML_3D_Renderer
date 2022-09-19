@@ -1,13 +1,5 @@
 #include "Window.h"
-
-Window::Window()
-{
-    this->width = 800;
-    this->height = 600;
-    this->isResized = false;
-    this->window = new sf::RenderWindow(sf::VideoMode(width, height), "SFML-app");
-    this->window->setView(sf::View(sf::Vector2f(0, 0), sf::Vector2f(25.f, 25.f)));
-}
+#include "renderer.h"
 
 Window::Window(int width, int height)
 {
@@ -64,4 +56,9 @@ void Window::display()
 void Window::draw(sf::VertexArray vertexArray)
 {
     this->window->draw(vertexArray);
+}
+
+sf::Vector2i Window::size()
+{
+    return sf::Vector2i(this->width, this->height);
 }

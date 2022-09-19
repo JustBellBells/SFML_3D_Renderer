@@ -3,12 +3,12 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Renderer.h"
 
 class Window
 {
 
 public:
-    Window();
     Window(int width, int height);
     ~Window();
     bool isRunning();
@@ -16,6 +16,8 @@ public:
     void draw(sf::VertexArray vertexArray);
     void clear();
     void display();
+
+    sf::Vector2i size();
 
     int width;
     int height;

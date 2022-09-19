@@ -10,8 +10,8 @@ int main()
     int height(1080);
 
     // Initialize window and renderer
-    Window window(width, height);
     Renderer renderer;
+    Window window(width, height);
 
     // Render Obj file
     renderer.loadObj("FinalBaseMesh.obj");
@@ -19,17 +19,12 @@ int main()
     // Main loop
     while (window.isRunning())
     {
-      if(window.isResized)
-      {
-        window.isResized = false;
-        renderer.width = window.width;
-        renderer.height = window.height;
-      }
-      window.pollEvents();
-      window.clear();
-      renderer.renderObj();
-      window.draw(renderer.vertexArray);
-      window.display();
-      renderer.frame++;
+        window.pollEvents();
+        renderer.setSize(window.size());
+        window.clear();
+        renderer.renderObj();
+        window.draw(renderer.vertexArray);
+        window.display();
+        renderer.frame++;
     }
 }

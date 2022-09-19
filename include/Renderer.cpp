@@ -37,3 +37,9 @@ void Renderer::loadObj(std::string objFile)
     }
     this->vertexArray = sf::VertexArray(sf::Points, this->vertCount);
 }
+
+void Renderer::setSize(sf::Vector2i size)
+{
+    this->width = size.x;
+    this->height = size.y;
+}

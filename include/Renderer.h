@@ -14,6 +14,7 @@ public:
     ~Renderer();
     void renderObj();
     void loadObj(std::string objFile);
+    void setSize(sf::Vector2i size);
 
     std::vector<sf::Vector3f> mesh;
     int vertCount;
