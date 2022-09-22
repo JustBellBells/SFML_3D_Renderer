@@ -6,15 +6,16 @@
 int main()
 {
     int frame(0);
-    int width(1920);
-    int height(1080);
+    const int width(1920);
+    const int height(1080);
 
     // Initialize window and renderer
     Renderer renderer;
     Window window(width, height);
 
     // Render Obj file
-    renderer.loadObj("FinalBaseMesh.obj");
+    //  You can choose the model to render as well as the primitive type to render with.
+    renderer.loadObj("Teapot.obj", sf::Triangles);
 
     // Main loop
     while (window.isRunning())
