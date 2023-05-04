@@ -15,7 +15,7 @@ int main()
 
     // Render Obj file
     //  You can choose the model to render as well as the primitive type to render with.
-    renderer.loadObj("Teapot.obj", sf::Triangles);
+    renderer.loadObj("Cube.obj", sf::PrimitiveType::Lines);
 
     // Main loop
     while (window.isRunning())
